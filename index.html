@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morning Brief</title>
+    <style>
+        :root { --bg:#0d1117; --card:#161b22; --border:#30363d; --text:#e6edf3; --muted:#7d8590; --green:#3fb950; --red:#f85149; --blue:#58a6ff; --accent:#f0883e; }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:var(--bg); color:var(--text); line-height:1.5; padding:16px; max-width:600px; margin:0 auto; }
+        h1 { font-size:24px; margin-bottom:4px; color:var(--accent); }
+        .subtitle { color:var(--muted); font-size:14px; margin-bottom:20px; }
+        .section { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:16px; margin-bottom:16px; }
+        .section h2 { font-size:14px; text-transform:uppercase; letter-spacing:1px; color:var(--muted); margin-bottom:12px; }
+        .position { display:flex; justify-content:space-between; align-items:center; padding:8px 0; border-bottom:1px solid var(--border); }
+        .position:last-child { border-bottom:none; }
+        .ticker { font-weight:600; font-size:16px; }
+        .price { color:var(--muted); font-size:14px; }
+        .change { font-weight:600; font-size:14px; }
+        .up { color:var(--green); }
+        .down { color:var(--red); }
+        .item { padding:8px 0; border-bottom:1px solid var(--border); font-size:14px; }
+        .item:last-child { border-bottom:none; }
+        .muted { color:var(--muted); font-size:14px; }
+        .tweet { padding:10px 0; border-bottom:1px solid var(--border); }
+        .tweet:last-child { border-bottom:none; }
+        .tweet .author { color:var(--blue); font-size:13px; font-weight:500; }
+        .tweet p { margin-top:4px; font-size:14px; }
+        .list-name { color:var(--accent); font-weight:600; font-size:13px; margin-top:16px; margin-bottom:8px; text-transform:uppercase; }
+        .list-name:first-child { margin-top:0; }
+        .temp { font-size:32px; font-weight:600; }
+        .quote { font-style:italic; color:var(--muted); font-size:14px; text-align:center; }
+        .econ-event { background:var(--bg); padding:8px 12px; border-radius:8px; margin-bottom:8px; font-size:14px; }
+    </style>
+</head>
+<body>
+    <h1>☀️ Morning Brief</h1>
+    <p class="subtitle">Friday, February 06, 2026 • 05:00 AM CST</p>
+
+    <div class="section">
+        <h2>📊 Positions</h2>
+        <div class="position"><span class="ticker">BTC</span><span class="price">$65867</span><span class="change down">-6.9%</span></div>
+        <div class="position"><span class="ticker">SOL</span><span class="price">$80.82</span><span class="change down">-10.6%</span></div>
+        <div class="position"><span class="ticker">SUI</span><span class="price">$0.95</span><span class="change down">-7.0%</span></div>
+        <div class="position"><span class="ticker">GIGA</span><span class="price">$0.002315</span><span class="change down">-0.9%</span></div>
+        <div class="position"><span class="ticker">SPX6900</span><span class="price">$0.2744</span><span class="change down">-6.1%</span></div>
+        <div class="position"><span class="ticker">MSTR</span><span class="price">$106.99</span><span class="change down">-17.0%</span></div>
+        <div class="position"><span class="ticker">S&P 500</span><span class="price">$677.62</span><span class="change down">-1.0%</span></div>
+    </div>
+
+    <div class="section">
+        <h2>📅 Economic Calendar (USD/EUR)</h2>
+        <div class="econ-event"><strong>10:00 AM EST</strong> — JOLTS Job Openings<br><span class="muted">Forecast: 7.0M | Previous: 7.146M</span></div>
+        <div class="econ-event"><strong>1:00 PM EST</strong> — Fed Barkin Speech</div>
+    </div>
+
+    <div class="section">
+        <h2>🗓️ Calendar</h2>
+        <p class="muted">Calendar clear ✓</p>
+    </div>
+
+    <div class="section">
+        <h2>📧 Unread Emails</h2>
+        <div class="item"><strong>Mail Delivery Subsystem</strong><br><span class="muted">Delivery Status Notification (Failure)</span></div>
+<div class="item"><strong>Wade at Zapier</strong><br><span class="muted">How we’re actually using AI inside teams</span></div>
+<div class="item"><strong>Claude Team</strong><br><span class="muted">Introducing Claude Opus 4.6</span></div>
+<div class="item"><strong>Netlify Team</strong><br><span class="muted">Less meetings, more Deploy Previews</span></div>
+    </div>
+
+    <div class="section">
+        <h2>🌤️ Weather — Ashland City</h2>
+        <span class="temp">29.9°F</span>
+        <span class="muted">Clear</span>
+    </div>
+
+    <div class="section">
+        <h2>🐦 Twitter</h2>
+        <div class="list-name">Crypto</div>
+        <div class="tweet"><span class="author">@CoinMarketCap</span><p>CMC Crypto Fear &amp; Greed Index at all-time low of 5 amid prolonged market drop. Bitcoin down 52.4% from 2025 peak ($126,198), signaling capitulation &amp; potential undervaluation.  Contrarians, eyes open!</p></div>
+<div class="tweet"><span class="author">@CoinMarketCap</span><p>Your prediction?</p></div>
+<div class="tweet"><span class="author">@CoinMarketCap</span><p>LATEST: 🏠 Ethereum treasury firm ETHZilla has acquired a portfolio of manufactured and modular home loans that it plans to tokenized into a cash-flow-generating manufactured home loan token on an Ethereum L2. </p></div>
+        <div class="list-name">Markets</div>
+        <div class="tweet"><span class="author">@KobeissiLetter</span><p>BREAKING: US stock market futures erase losses of over -1% and turn positive on the day. </p></div>
+<div class="tweet"><span class="author">@WatcherGuru</span><p>JUST IN: Binance buys another $235,000,000 worth of Bitcoin for its 'SAFU' fund.</p></div>
+<div class="tweet"><span class="author">@unusual_whales</span><p>Good night to everyone:</p></div>
+        <div class="list-name">Politics</div>
+        <div class="tweet"><span class="author">@TrumpTruthOnX</span><p>New media post from Donald J. Trump  (TS: 05 Feb 22:49 ET)​​​‍​​‌‍​​‌‍​​​​​​​‌‍​‌‍​​​‌‍​​‌‍​​​​​​​‌‍​​​​​‌‍​​​​‌‍​​​​​​​​​‌‍​​​​​​​​​‌‍​​​​​​‌‍​​​​​​​​‌‍​​​​​​​‌‍​​‌‍​​​​​​​​​‌‍​​​​​​​​​​‌‍ </p></div>
+<div class="tweet"><span class="author">@TrumpTruthOnX</span><p>Wow. So nice. Thank you Anna Paulina! President DJT     (TS: 05 Feb 22:47 ET)​​​‍​​‌‍​​‌‍​​​​​​​‌‍​‌‍​​​‌‍​​‌‍​​​​​​​‌‍​​​​‌‍​​​​​‌‍​​​​​​​​‌‍​​​​‌‍​​​​​​​​​‌‍​​​​​​​‌‍​​​​​‌‍​​​​​​​​​​‌‍​‌‍​​​​​​​​‌‍ </p></div>
+<div class="tweet"><span class="author">@TrumpTruthOnX</span><p>New media post from Donald J. Trump  (TS: 05 Feb 22:39 ET)​​​‍​​‌‍​​‌‍​​​​​​​‌‍​‌‍​​​‌‍​​‌‍​​​​​​​‌‍​‌‍​​​​​‌‍​​‌‍​​​​​​​​‌‍​​​​​‌‍​​​​​‌‍​​​‌‍​​​​​​​​​​‌‍​​​‌‍​​​​‌‍ </p></div>
+        <div class="list-name">News</div>
+        <div class="tweet"><span class="author">@remarks</span><p>JUST IN: 🇺🇸 President Trump posts video portraying the Obamas as apes on Truth Social. </p></div>
+<div class="tweet"><span class="author">@remarks</span><p>Time Stamp: 00:58  </p></div>
+<div class="tweet"><span class="author">@remarks</span><p>JUST IN: 🇺🇸 President Trump officially launches affordable online prescription drug platform TrumpRx.</p></div>
+        <div class="list-name">Technology</div>
+        <div class="tweet"><span class="author">@elonmusk</span><p>For sure</p></div>
+<div class="tweet"><span class="author">@elonmusk</span><p>Big upgrade to @CommunityNotes</p></div>
+<div class="tweet"><span class="author">@elonmusk</span><p>The smart people are here</p></div>
+        <div class="list-name">Insights</div>
+        <div class="tweet"><span class="author">@elonmusk</span><p>For sure</p></div>
+<div class="tweet"><span class="author">@elonmusk</span><p>Big upgrade to @CommunityNotes</p></div>
+<div class="tweet"><span class="author">@BillAckman</span><p>.@SecRubio is incredible. A few minute must watch on Iran. Incredibly prophetic words.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>💭 Quote</h2>
+        <p class="quote">Speed is a force multiplier. — Alex Hormozi</p>
+    </div>
+</body>
+</html>
