@@ -24,8 +24,13 @@
         .muted { color:var(--muted); font-size:14px; }
         .tweet { padding:10px 0; border-bottom:1px solid var(--border); }
         .tweet:last-child { border-bottom:none; }
-        .tweet .author { color:var(--blue); font-size:13px; font-weight:500; }
+        .tweet .author { color:var(--blue); font-size:13px; font-weight:500; text-decoration:none; }
+        .tweet .author:hover { text-decoration:underline; }
         .tweet p { margin-top:4px; font-size:14px; }
+        .trending-item { padding:8px 0; border-bottom:1px solid var(--border); font-size:14px; }
+        .trending-item:last-child { border-bottom:none; }
+        .trending-item a { color:var(--blue); text-decoration:none; font-weight:600; }
+        .trending-item a:hover { text-decoration:underline; }
         .list-name { color:var(--accent); font-weight:600; font-size:13px; margin-top:16px; margin-bottom:8px; text-transform:uppercase; }
         .list-name:first-child { margin-top:0; }
         .temp { font-size:32px; font-weight:600; }
@@ -35,23 +40,17 @@
 </head>
 <body>
     <h1>☀️ Morning Brief</h1>
-    <p class="subtitle">Monday, February 09, 2026 • 05:00 AM CST</p>
+    <p class="subtitle">Monday, February 09, 2026 • 05:07 PM CST</p>
 
     <div class="section">
         <h2>📊 Positions</h2>
-        <div class="position"><span class="ticker">BTC</span><span class="price">$68685</span><span class="change down">-2.2%</span></div>
-        <div class="position"><span class="ticker">SOL</span><span class="price">$83.17</span><span class="change down">-4.3%</span></div>
-        <div class="position"><span class="ticker">SUI</span><span class="price">$0.93</span><span class="change down">-5.8%</span></div>
-        <div class="position"><span class="ticker">GIGA</span><span class="price">$0.002256</span><span class="change down">-8.1%</span></div>
-        <div class="position"><span class="ticker">SPX6900</span><span class="price">$0.2821</span><span class="change down">-6.4%</span></div>
-        <div class="position"><span class="ticker">MSTR</span><span class="price">$134.93</span><span class="change up">26.0%</span></div>
-        <div class="position"><span class="ticker">S&P 500</span><span class="price">$690.62</span><span class="change up">1.0%</span></div>
-    </div>
-
-    <div class="section">
-        <h2>📅 Economic Calendar (USD/EUR)</h2>
-        <div class="econ-event"><strong>10:00 AM EST</strong> — JOLTS Job Openings<br><span class="muted">Forecast: 7.0M | Previous: 7.146M</span></div>
-        <div class="econ-event"><strong>1:00 PM EST</strong> — Fed Barkin Speech</div>
+        <div class="position"><span class="ticker">BTC</span><span class="price">$70474</span><span class="change down">-1.9%</span></div>
+        <div class="position"><span class="ticker">SOL</span><span class="price">$87.13</span><span class="change down">-0.9%</span></div>
+        <div class="position"><span class="ticker">SUI</span><span class="price">$0.97</span><span class="change down">-1.8%</span></div>
+        <div class="position"><span class="ticker">GIGA</span><span class="price">$0.002396</span><span class="change up">0.5%</span></div>
+        <div class="position"><span class="ticker">SPX6900</span><span class="price">$0.2979</span><span class="change down">-0.7%</span></div>
+        <div class="position"><span class="ticker">MSTR</span><span class="price">$138.44</span><span class="change up">2.0%</span></div>
+        <div class="position"><span class="ticker">S&P 500</span><span class="price">$693.95</span><span class="change up">0.0%</span></div>
     </div>
 
     <div class="section">
@@ -60,51 +59,61 @@
     </div>
 
     <div class="section">
-        <h2>📧 Unread Emails</h2>
-        <div class="item"><strong>Milos from Cal.com, Inc.</strong><br><span class="muted">Re: Organization/Enterprise tier for multi-tenant SaaS — agency use case</span></div>
-<div class="item"><strong>Chris Williamson</strong><br><span class="muted">3MM: Problems, Crime & Sydney Sweeney</span></div>
-<div class="item"><strong>Cloudflare</strong><br><span class="muted">Welcome to Cloudflare</span></div>
-<div class="item"><strong>Stripe</strong><br><span class="muted">Build your subscription financial stack for scale</span></div>
-<div class="item"><strong>The Airtable Team</strong><br><span class="muted">Bring AI into your day-to-day</span></div>
+        <h2>📧 High Priority Emails</h2>
+        <p class='muted'>Nothing important ✓</p>
     </div>
 
     <div class="section">
         <h2>🌤️ Weather — Ashland City</h2>
-        <span class="temp">32.4°F</span>
+        <span class="temp">62.8°F</span>
         <span class="muted">Clear</span>
     </div>
 
     <div class="section">
         <h2>🐦 Twitter</h2>
         <div class="list-name">Crypto</div>
-        <div class="tweet"><span class="author">@CoinMarketCap</span><p>LATEST: 🔍 Google search interest for Bitcoin hit a 12-month high during the week of Feb. 1-7 as BTC briefly dropped to $60,000, with some proclaiming retail investors are returning to the market. </p></div>
-<div class="tweet"><span class="author">@CoinMarketCap</span><p>💡 CoinMarketCap | App Widgets 💡  Build a pro-level Crypto Dashboard on your phone... in under 60 seconds ⏱️ Here’s how you can turn a blank screen into a full market monitor.  Setup: 🔹 Ticker (Price + Market Cap & Stats) 🔹 Total Market Cap for the macro view 🔹 Top Crypto List to </p></div>
-<div class="tweet"><span class="author">@CoinMarketCap</span><p>Download the app here: </p></div>
+        <div class="tweet"><a href="https://x.com/CoinMarketCap/status/2020995419988275571" target="_blank" class="author">@CoinMarketCap</a><p>LATEST: 💰 BitMine acquired another 40,613 ETH, expanding its total holdings to 4.33 million ETH, valued at $9.2 billion and representing 3.58% of Ethereum's circulating supply. </p></div>
+<div class="tweet"><a href="https://x.com/solana/status/2020983697990996152" target="_blank" class="author">@solana</a><p>SushiSwap is on Solana 🍣  Join us Tuesday, Feb 10 at 1:30PM ET with @SushiSwap CEO @alexmccurryo to talk about their new Solana-native DEX  Set a reminder 👇 </p></div>
+<div class="tweet"><a href="https://x.com/solana/status/2020983700830429342" target="_blank" class="author">@solana</a><p></p></div>
         <div class="list-name">Markets</div>
-        <div class="tweet"><span class="author">@WatcherGuru</span><p>JUST IN: Elon Musk says SpaceX plans to build a self-growing city on the Moon within 10 years. </p></div>
-<div class="tweet"><span class="author">@unusual_whales</span><p>Good night to everyone:</p></div>
-<div class="tweet"><span class="author">@KobeissiLetter</span><p>BREAKING: Elon Musk says SpaceX is attempting to build a self-growing city on the moon within the next 10 years.</p></div>
+        <div class="tweet"><a href="https://x.com/unusual_whales/status/2020996341724479511" target="_blank" class="author">@unusual_whales</a><p>OpenAI's Greg Brockman says this ad, originally leaked on Reddit, is "fake news."  Company officials told Business Insider the ad wasn't real and "Not OpenAI, not connected to us at all." </p></div>
+<div class="tweet"><a href="https://x.com/WatcherGuru/status/2020991513803522260" target="_blank" class="author">@WatcherGuru</a><p>JUST IN: Elon Musk says SpaceX is building a system "that allows anyone to travel to the Moon." </p></div>
+<div class="tweet"><a href="https://x.com/unusual_whales/status/2020988831822979079" target="_blank" class="author">@unusual_whales</a><p>Representative Thomas Massie has said he will go ‘nuclear’ and reveal Epstein client names if Bondi and the DOJ won’t unredact them</p></div>
         <div class="list-name">Politics</div>
-        <div class="tweet"><span class="author">@TrumpTruthOnX</span><p>Israel Hayom: Netanyahu is going to Washington out of fear of a nuclear deal with #Iran, but #Trump's fear is a long and endless war with Iran </p></div>
-<div class="tweet"><span class="author">@TrumpTruthOnX</span><p>New media post from Donald J. Trump  (TS: 08 Feb 23:47 ET)​​​‍​​‌‍​​‌‍​​​​​​​‌‍​‌‍​​​​‌‍​​​​​​​​​‌‍​​​​​​​​​‌‍​​​​​​‌‍​​​​​​​​​‌‍​​​​​​​​‌‍​​​​​​​​‌‍​​​​‌‍​​​​​​‌‍​​​​​​‌‍​​​‌‍​​​​​​​​​​‌‍​​​​​‌‍ </p></div>
-<div class="tweet"><span class="author">@TrumpTruthOnX</span><p>California governor race thrown into chaos as Democrat candidate Eric Swalwell is accused of lying about living in state:   (TS: 08 Feb 23:47 ET)​​​‍​​‌‍​​‌‍​​​​​​​‌‍​‌‍​​​​‌‍​​​​​​​​​‌‍​​​​​​​​​‌‍​​​​​​‌‍​​​​​​‌‍​​​​​​​​​​‌‍​​‌‍​​​​​​‌‍​​​​​​‌‍​​​​​‌‍​​​‌‍​​​​​‌‍​​​​​​​‌‍</p></div>
+        <div class="tweet"><a href="https://x.com/TrumpTruthOnX/status/2020993196789203080" target="_blank" class="author">@TrumpTruthOnX</a><p>As everyone knows, the Country of Canada has treated the United States very unfairly for decades. Now, things are turning around for the U.S.A., and FAST! But imagine, Canada is building a massive bridge between Ontario and Michigan. They own both the Canada and the United States</p></div>
+<div class="tweet"><a href="https://x.com/WhiteHouse/status/2020992936075280865" target="_blank" class="author">@WhiteHouse</a><p>🇺🇸🇺🇸🇺🇸🇺🇸</p></div>
+<div class="tweet"><a href="https://x.com/RapidResponse47/status/2020992620076355910" target="_blank" class="author">@RapidResponse47</a><p>"Voter ID rules do have wide public support, but the vast majority of Democrats on Capitol Hill oppose them."  Go figure! </p></div>
         <div class="list-name">News</div>
-        <div class="tweet"><span class="author">@TrumpTruthOnX</span><p>Israel Hayom: Netanyahu is going to Washington out of fear of a nuclear deal with #Iran, but #Trump's fear is a long and endless war with Iran </p></div>
-<div class="tweet"><span class="author">@TrumpTruthOnX</span><p>New media post from Donald J. Trump  (TS: 08 Feb 23:47 ET)​​​‍​​‌‍​​‌‍​​​​​​​‌‍​‌‍​​​​‌‍​​​​​​​​​‌‍​​​​​​​​​‌‍​​​​​​‌‍​​​​​​​​​‌‍​​​​​​​​‌‍​​​​​​​​‌‍​​​​‌‍​​​​​​‌‍​​​​​​‌‍​​​‌‍​​​​​​​​​​‌‍​​​​​‌‍ </p></div>
-<div class="tweet"><span class="author">@TrumpTruthOnX</span><p>California governor race thrown into chaos as Democrat candidate Eric Swalwell is accused of lying about living in state:   (TS: 08 Feb 23:47 ET)​​​‍​​‌‍​​‌‍​​​​​​​‌‍​‌‍​​​​‌‍​​​​​​​​​‌‍​​​​​​​​​‌‍​​​​​​‌‍​​​​​​‌‍​​​​​​​​​​‌‍​​‌‍​​​​​​‌‍​​​​​​‌‍​​​​​‌‍​​​‌‍​​​​​‌‍​​​​​​​‌‍</p></div>
+        <div class="tweet"><a href="https://x.com/remarks/status/2020996854012653610" target="_blank" class="author">@remarks</a><p>JUST IN: 🇺🇸 Federal judge blocks California law requiring ICE agents to remove face masks. </p></div>
+<div class="tweet"><a href="https://x.com/paulbarrontv/status/2020968495857664346" target="_blank" class="author">@paulbarrontv</a><p>🇺🇸Crypto Endgame IMMINENT🌐👀  WATCH NOW👉  $BTC $SOL $XRP $ETH </p></div>
+<div class="tweet"><a href="https://x.com/remarks/status/2020941884613644618" target="_blank" class="author">@remarks</a><p>JUST IN: 🇺🇸 Rep. Thomas Massie says President Trump should 'absolutely apologize' to former President Barack Obama. </p></div>
         <div class="list-name">Technology</div>
-        <div class="tweet"><span class="author">@elonmusk</span><p>This is a good sign</p></div>
-<div class="tweet"><span class="author">@elonmusk</span><p>Wow</p></div>
-<div class="tweet"><span class="author">@elonmusk</span><p>Grok</p></div>
+        <div class="tweet"><a href="https://x.com/elonmusk/status/2020964809999777996" target="_blank" class="author">@elonmusk</a><p>SpaceX will build a system that allows anyone to travel to Moon.  This will so insanely cool 🚀💫🤩</p></div>
+<div class="tweet"><a href="https://x.com/chamath/status/2020994442560434212" target="_blank" class="author">@chamath</a><p>@elonmusk In.</p></div>
+<div class="tweet"><a href="https://x.com/chamath/status/2020991422036689054" target="_blank" class="author">@chamath</a><p>America has 18 million zombies…</p></div>
         <div class="list-name">Insights</div>
-        <div class="tweet"><span class="author">@elonmusk</span><p>This is a good sign</p></div>
-<div class="tweet"><span class="author">@elonmusk</span><p>Wow</p></div>
-<div class="tweet"><span class="author">@elonmusk</span><p>Grok</p></div>
+        <div class="tweet"><a href="https://x.com/chamath/status/2020991422036689054" target="_blank" class="author">@chamath</a><p>America has 18 million zombies…</p></div>
+<div class="tweet"><a href="https://x.com/chamath/status/2020993554013880639" target="_blank" class="author">@chamath</a><p>Everyone I know that smokes pot has or is becoming an idiot, deranged, neurotic, psychotic or all of the above.   Not a single one is normal.   Can’t say the same for alcohol.</p></div>
+<div class="tweet"><a href="https://x.com/chamath/status/2020908919712006304" target="_blank" class="author">@chamath</a><p>We bought a bank. </p></div>
+    </div>
+
+    <div class="section">
+        <h2>🔥 Trending</h2>
+        <div class="trending-item"><strong>SpaceX Shifts Focus to Self-Sustaining Moon City Before Mars</strong> <span class="muted">· 267K posts</span> <span class="muted">· 1 day ago</span></div>
+<div class="trending-item"><strong>X Adds Grok Logo Animation to Likes on Posts Mentioning the AI</strong> <span class="muted">· 30K posts</span> <span class="muted">· 1 day ago</span></div>
+<div class="trending-item"><strong>Michael Saylor's 'Orange Dots Matter' Post Fuels Bitcoin Buy Speculation</strong> <span class="muted">· 23K posts</span> <span class="muted">· 1 day ago</span></div>
+<div class="trending-item"><strong>#FundsRecovery</strong></div>
+<div class="trending-item"><strong>$AXOL</strong></div>
+<div class="trending-item"><strong>Solo Mio</strong></div>
+<div class="trending-item"><strong>Goodfellas</strong></div>
+<div class="trending-item"><strong>Ozzie Smith</strong></div>
+<div class="trending-item"><strong>Bitcoin Rebounds Above $70,000 Amid Reserve Buy Rumors</strong> <span class="muted">· 33K posts</span> <span class="muted">· 2 days ago</span></div>
+<div class="trending-item"><strong>Super Bowl Ads Spark Health, Immigration and Surveillance Clashes</strong> <span class="muted">· 156K posts</span> <span class="muted">· 1 day ago</span></div>
     </div>
 
     <div class="section">
         <h2>💭 Quote</h2>
-        <p class="quote">The amateur works when inspired. The professional works every day. — Steven Pressfield</p>
+        <p class="quote">You don't rise to the level of your goals. You fall to the level of your systems. — James Clear</p>
     </div>
 </body>
 </html>
